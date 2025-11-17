@@ -2,7 +2,7 @@
 title: "Senior Project – Porosity–Permeability Crossplot"
 ---
 
-# Porosity–Permeability Crossplot (Elsevier Style)
+# Porosity–Permeability Crossplot
 
 <img src="poro_perm_elsevier_style.png" width="650">
 
