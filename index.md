@@ -2,50 +2,121 @@
 title: "Senior Project – Porosity–Permeability Crossplot"
 ---
 
-# Porosity–Permeability Crossplot
+<style>
+.main-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+}
+.hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.hero-title {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+.hero-subtitle {
+  font-size: 1.05rem;
+  color: #555;
+}
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  background: #e3f2fd;
+  color: #1565c0;
+  margin-bottom: 0.75rem;
+}
+.section-title {
+  font-size: 1.3rem;
+  margin-top: 1.8rem;
+  margin-bottom: 0.6rem;
+}
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.2rem 1.4rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  margin-bottom: 1.4rem;
+}
+.img-center {
+  text-align: center;
+  margin: 1rem 0;
+}
+.img-center img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+.small-muted {
+  font-size: 0.85rem;
+  color: #777;
+}
+</style>
 
-<img src="poro_perm_elsevier_style.png" width="650">
+<div class="main-wrapper">
 
-This page presents a scientific crossplot between **porosity (%)** and **permeability (mD)** generated as part of my senior project.  
-The figure follows an **Elsevier-style** layout using Python (`pandas` + `matplotlib`).
+<div class="hero">
+  <div class="badge">Senior Project · Reservoir Characterization</div>
+  <div class="hero-title">Porosity–Permeability Crossplot</div>
+  <div class="hero-subtitle">
+    Mixed clastic–carbonate reservoir samples visualised with Python (pandas + matplotlib)  
+    and published via GitHub Pages.
+  </div>
+</div>
 
----
+<div class="card">
+  <div class="section-title">Figure 1 – Scientific Crossplot (Elsevier Style)</div>
+  <div class="img-center">
+    <img src="poro_perm_elsevier_style.png" alt="Porosity–Permeability Crossplot">
+  </div>
+  <p class="small-muted">
+    Figure 1. Porosity (%) versus permeability (mD, log scale) for mixed clastic–carbonate samples. 
+    Colors indicate facies, while marker shapes differentiate clastic and carbonate rock types.
+  </p>
+</div>
 
-## Dataset Overview
+<div class="card">
+  <div class="section-title">Dataset Overview</div>
+  <ul>
+    <li><strong>Porosity (%)</strong> – core plug porosity</li>
+    <li><strong>Permeability_mD</strong> – measured permeability in millidarcy (log-scaled on the plot)</li>
+    <li><strong>Facies</strong> – Sandstone_A/B/C, Carbonate_Mudstone, Wackestone, Packstone, Grainstone</li>
+    <li><strong>RockType</strong> – Clastic vs. Carbonate</li>
+    <li><strong>Depth_m</strong> – sampling depth (m)</li>
+  </ul>
+  <p>
+    Clastic facies generally occupy the high-porosity, high-permeability domain, 
+    whereas carbonate mudstones and wackestones cluster in the low-permeability field 
+    and tend to behave as caprock or baffles.
+  </p>
+</div>
 
-This dataset contains mixed **clastic–carbonate reservoir samples** with the following fields:
+<div class="card">
+  <div class="section-title">Workflow</div>
+  <ol>
+    <li>Create synthetic mixed clastic–carbonate dataset (<code>mixed_clastic_carbonate_simple.csv</code>).</li>
+    <li>Use <code>pandas</code> to read the dataset in Python.</li>
+    <li>Plot porosity vs. permeability (log scale) with <code>matplotlib</code>, using:
+      <ul>
+        <li>Colors for facies</li>
+        <li>Marker shapes for rock types</li>
+      </ul>
+    </li>
+    <li>Export the figure as <code>poro_perm_elsevier_style.png</code>.</li>
+    <li>Publish the result and description on this GitHub Pages site.</li>
+  </ol>
+</div>
 
-- `Porosity (%)`
-- `Permeability_mD` (visualized on a log scale)
-- `Facies` (Sandstone_A/B/C, Carbonate_Mudstone, Wackestone, Packstone, Grainstone)
-- `RockType` (Clastic / Carbonate)
-- `GrainSize`
-- `Depth_m`
+<div class="card">
+  <div class="section-title">Project Note</div>
+  <p>
+    This page is part of my Senior Project deliverables. It demonstrates the full workflow from 
+    <strong>data preparation → scientific visualisation → web presentation</strong> for reservoir characterization 
+    and CO₂ storage–related studies.
+  </p>
+</div>
 
-Clastic facies (sandstones) generally show higher porosity and permeability, while carbonate mudstones and wackestones have very low permeability and may act as **caprock or flow barriers**.
-
----
-
-## Geological Interpretation
-
-From the crossplot:
-
-- **Sandstone facies** cluster in the high-porosity, high-permeability region → good reservoir quality.
-- **Carbonate facies** form a low-permeability cluster → more suitable as caprock or baffles.
-- Permeability spans more than two orders of magnitude, so a **logarithmic scale** on the Y-axis is required to visualize the trend properly.
-
----
-
-## Python Workflow (Summary)
-
-1. Read CSV file (`mixed_clastic_carbonate_simple.csv`) using `pandas`
-2. Plot porosity vs. permeability using `matplotlib`
-3. Use different colors for each **Facies**
-4. Use different marker shapes for **RockType** (Clastic vs. Carbonate)
-5. Save the figure as `poro_perm_elsevier_style.png`
-6. Publish the figure and description here via **GitHub Pages**
-
----
-
-_This page is part of my Senior Project workflow:  
-**Data preparation → Python visualization → Web presentation (GitHub Pages).**_
+</div>
