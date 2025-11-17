@@ -68,7 +68,7 @@ title: "Senior Project – Porosity–Permeability Crossplot"
 </div>
 
 <div class="card">
-  <div class="section-title">Figure 1 – Scientific Crossplot (Elsevier Style)</div>
+  <div class="section-title">Figure 1 – Scientific Crossplot </div>
   <div class="img-center">
     <img src="poro_perm_elsevier_style.png" alt="Porosity–Permeability Crossplot">
   </div>
