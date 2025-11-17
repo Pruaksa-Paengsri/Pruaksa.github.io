@@ -1,4 +1,6 @@
 ---
+layout: post
+---
 title: "Senior Project: Scientific Porosity–Permeability Crossplot"
 ---
 
