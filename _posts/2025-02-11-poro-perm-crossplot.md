@@ -4,7 +4,7 @@ title: "Senior Project: Scientific Porosity–Permeability Crossplot"
 
 # Porosity–Permeability Crossplot (Elsevier Scientific Style)
 
-<img src="poro_perm_elsevier_style.png" width="650">
+<img src="poro_perm_elsevier_style.png" width="600">
 
 This page presents a scientific crossplot between **porosity (%)** and **permeability (mD)** generated as part of my Senior Project.  
 The figure follows the visual style commonly used in **Elsevier journals** (e.g., *Marine and Petroleum Geology*, *Journal of Structural Geology*, *Fuel*) using muted color palettes, clean markers, and log-scale permeability.
