@@ -1,2 +1,3 @@
-theme: minima
-markdown: kramdown
+theme: jekyll-theme-cayman
+title: "Pruaksa – Senior Project"
+description: "Porosity–Permeability Crossplot & GitHub Pages Demo"
